@@ -152,7 +152,7 @@ int read_dic_file(stHeads *pstHTN)
 		}
 		
 		//匹配数据字典中以keyword开头的行
-		if (memcmp(cBuffer, "KeyWord", strlen("KeyWord")) == 0){
+		if (memcmp(cBuffer, "keyword", strlen("keyword")) == 0){
 			sscanf(cBuffer, "%*[^=]=%[^,],%*[^=]=%d,%*[^=]=%d,%*[^=]=%d,%*[^=]=%d",
 					 cKeyWord, &uiLevel, &uiRead, &uiPrint, &uiCopy);
 		} else{
